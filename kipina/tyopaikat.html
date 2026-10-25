@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Selaa opiskelijoiden työpaikkoja Kipinässä.">
+    <title>Kipinä – Työpaikat</title>
+    <link rel="stylesheet" href="tyyli.css">
+</head>
+<body>
+
+<header>
+    <nav aria-label="Päänavigaatio">
+        <a class="logo" href="index.html">Kipinä<span>.</span></a>
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="tyopaikat.html" aria-current="page">Työpaikat</a></li>
+            <li><a href="meista.html">Meistä</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h1>Sinun seuraava mahdollisuutesi.</h1>
+        <p>Etsi kesätöitä, harjoittelupaikkoja ja osa-aikaisia töitä.</p>
+
+        <form class="search-box" action="tyopaikat.html" method="get">
+            <div class="field">
+                <label for="tyo">Millaista työtä etsit?</label>
+                <input id="tyo" name="tyo" type="search"
+                       placeholder="Esim. kesätyö">
+            </div>
+
+            <div class="field">
+                <label for="paikka">Paikkakunta</label>
+                <input id="paikka" name="paikka" type="text"
+                       placeholder="Esim. Helsinki">
+            </div>
+
+            <button class="button" type="submit">Etsi työpaikkoja</button>
+        </form>
+    </section>
+
+    <section class="jobs">
+        <h2>Työpaikkoja opiskelijoille</h2>
+
+        <div class="job-list">
+            <article class="job-card">
+                <h3>Kahvilatyöntekijä</h3>
+                <p><strong>Kahvila Kajo</strong></p>
+                <p>Helsinki</p>
+                <span class="tag">Osa-aikainen</span>
+                <span class="tag">Asiakaspalvelu</span>
+                <p>Opettele asiakaspalvelua ja työskentele mukavassa tiimissä.</p>
+                <a href="mailto:rekry@example.com?subject=Kahvilatyohakemus">
+                    Hae paikkaa →
+                </a>
+            </article>
+
+            <article class="job-card">
+                <h3>IT-harjoittelija</h3>
+                <p><strong>Nordic Tech</strong></p>
+                <p>Etätyö</p>
+                <span class="tag">Harjoittelu</span>
+                <span class="tag">IT</span>
+                <p>Kehitä digitaalisia taitojasi ja opi uutta.</p>
+                <a href="mailto:rekry@example.com?subject=IT-harjoitteluhakemus">
+                    Hae paikkaa →
+                </a>
+            </article>
+
+            <article class="job-card">
+                <h3>Kesätyöntekijä</h3>
+                <p><strong>Kesäpuisto</strong></p>
+                <p>Espoo</p>
+                <span class="tag">Kesätyö</span>
+                <span class="tag">Aloittelijalle</span>
+                <p>Hanki ensimmäistä työkokemustasi ja vietä aktiivinen kesä.</p>
+                <a href="mailto:rekry@example.com?subject=Kesatyohakemus">
+                    Hae paikkaa →
+                </a>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p><strong>Kipinä</strong> – jokainen ura alkaa kipinästä.</p>
+    <p><a href="mailto:info@example.com">Ota yhteyttä</a></p>
+    <p><a href="index.html">Takaisin etusivulle</a></p>
+    <p>&copy; 2026 Kipinä</p>
+</footer>
+
+</body>
+</html>
